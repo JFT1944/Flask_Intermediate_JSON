@@ -1,0 +1,55 @@
+<!-- ---------------------------------------------------------------
+ONLY THING LEFT IS TO WRITE TESTS
+--------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img{
+            width: 200px;
+        }
+        #top_container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #available_cupcakes{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        .cc_wrapper{
+            margin: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="width: 100vw; text-align:center">Delicious Homemade Cupcakes:</h1>
+    <div style="width: 100vw; display: flex; justify-content: space-around; margin: 30px;">
+        <button id="add">Add A New Cupcake</button>
+    </div>
+    <div id="top_container">
+        <div style="text-align: center" id="available_cupcakes"></div>
+    </div>
+<div id="form_wrapper"style="width: 100vw; height:100vh; position: fixed; background: white; z-index: 100; top:0; display: none; justify-content: center; align-items:center" >
+
+    <form id="add_new_cc"action="" method="post" style="display: flex; flex-direction: column; width: 50%;">
+
+    Flavor: <input type="text" name="flavor" id="flavor">
+    Size: <input type="text" name="size">
+    Rating: <input type="number" name="rating">
+    Image: <input type="url" name="image">
+    <input type="submit">
+</form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="static/js.js"></script>
+</body>
+</html>
